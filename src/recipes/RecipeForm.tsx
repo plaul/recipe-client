@@ -43,7 +43,8 @@ export default function RecipeForm() {
   const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     const addedOrEdited = formData.id ? "edited" : "added";
-    const newRecipe = await addRecipe(formData);
+    //const newRecipe = await addRecipe(formData);
+    await addRecipe(formData);
     alert(`Recipe ${addedOrEdited} successfully!`);
     setFormData({ ...EMPTY_RECIPE });
   };

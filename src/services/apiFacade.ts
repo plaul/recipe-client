@@ -29,7 +29,7 @@ let categories = {
   lastUpdated: 0
 };
 
-let recipes: Array<Recipe> = [];
+//let recipes: Array<Recipe> = [];
 let info: Info | null = null;
 
 async function getCategories(): Promise<Array<string>> {
